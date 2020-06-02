@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.EmployeeController">
+    <children>
+        <Button fx:id="emplButton" layoutX="115.0" layoutY="293.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Добавить сотрудника" />
+        <TextField fx:id="lnameField" layoutX="58.0" layoutY="63.0" prefHeight="25.0" prefWidth="263.0" promptText="Фамилия" />
+        <Label layoutX="703.0" layoutY="30.0" text="Сотрудники">
+            <font>
+                <Font name="Book Antiqua" size="25.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nameField" layoutX="58.0" layoutY="97.0" prefHeight="25.0" prefWidth="263.0" promptText="Имя" />
+        <TextField fx:id="snameField" layoutX="58.0" layoutY="135.0" prefHeight="25.0" prefWidth="263.0" promptText="Отчество" />
+        <TextField fx:id="idField" layoutX="58.0" layoutY="174.0" prefHeight="25.0" prefWidth="263.0" promptText="Табельный номер" />
+        <TextField fx:id="positionField" layoutX="58.0" layoutY="208.0" prefHeight="25.0" prefWidth="263.0" promptText="Должность" />
+        <TextField fx:id="departField" layoutX="58.0" layoutY="244.0" prefHeight="25.0" prefWidth="263.0" promptText="Номер департамента" />
+        <TableView fx:id="table" editable="true" layoutX="415.0" layoutY="76.0" prefHeight="289.0" prefWidth="724.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="228.66668701171875" text="ФИО" />
+                <TableColumn fx:id="positionColumn" prefWidth="110.0" text="Должность" />
+                <TableColumn fx:id="idColumn" prefWidth="88.0" text="Табельный №" />
+                <TableColumn fx:id="departColumn" prefWidth="293.66668701171875" text="Департамент" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
